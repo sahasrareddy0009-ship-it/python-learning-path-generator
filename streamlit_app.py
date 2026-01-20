@@ -9,20 +9,15 @@ Run with: streamlit run app/streamlit_app.py
 
 import streamlit as st
 import yaml
-# import sys
-# from pathlib import Path
+import sys
+from pathlib import Path
 from dataclasses import asdict
 import time
 
 # Add src directory to path for imports - must be at the top
-# PROJECT_ROOT = Path(__file__).resolve().parent.parent
-# SRC_DIR = PROJECT_ROOT / "src"
-# sys.path.insert(0, str(SRC_DIR))
-
-from src.retriever import UserProfile, RuleBasedRetriever, KnowledgeBaseLoader
-from src.generator import create_generator
-from src.explainer import create_explainer
-
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
+sys.path.insert(0, str(SRC_DIR))
 
 # Import our RAG modules
 from retriever import (
