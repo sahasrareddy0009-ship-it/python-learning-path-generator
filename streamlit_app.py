@@ -19,6 +19,11 @@ import time
 # SRC_DIR = PROJECT_ROOT / "src"
 # sys.path.insert(0, str(SRC_DIR))
 
+from src.retriever import UserProfile, RuleBasedRetriever, KnowledgeBaseLoader
+from src.generator import create_generator
+from src.explainer import create_explainer
+
+
 # Import our RAG modules
 from retriever import (
     UserProfile,
