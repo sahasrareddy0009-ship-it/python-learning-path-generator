@@ -1,0 +1,16 @@
+{
+  "base_phases": [
+    {
+      "name": "Foundations",
+      "topics": [
+        "Python syntax",
+        "Variables and data types",
+        "Conditions and loops",
+        "Functions"
+      ],
+      "advanced": [
+        "Python internals"
+      ]
+    }
+  ]
+}
